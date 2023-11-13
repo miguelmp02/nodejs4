@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  h1 Lista de Elementos
+  ul
+    each item in items
+      li= item
+  img(src='/images/sample.jpg', alt='Sample Image', width='500', height='400')
+  a(href='/login') Login
+
+
